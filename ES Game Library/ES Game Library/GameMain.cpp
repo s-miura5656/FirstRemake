@@ -16,6 +16,7 @@ bool GameMain::Initialize()
 	WindowTitle(_T("ES Game Library"));
 	SoundManager::Instance().Initialize();
 	Controller::Instance().Initialize();
+	SceneManager::Instance().FileInitialize();
 	SceneManager::Instance().Initialize();
 
 	return true;
@@ -58,7 +59,7 @@ void GameMain::Draw()
 
 	SpriteBatch.Begin();
 	SceneManager::Instance().Draw2D();
-
+	
 	SpriteBatch.End();
 
 	GraphicsDevice.EndScene();

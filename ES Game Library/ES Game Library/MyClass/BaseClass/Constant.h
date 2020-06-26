@@ -19,3 +19,8 @@
 // Y軸反転
 #define ROTATION_Y_INVERSION 180.f
 
+// アルファ値最大
+#define ALPHA_MAX 1.f
+
+// アルファ値無
+#define ALPHA_ZERO 0.f

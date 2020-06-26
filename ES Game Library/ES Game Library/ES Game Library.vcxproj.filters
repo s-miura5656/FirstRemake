@@ -130,6 +130,9 @@
     <Filter Include="ソース ファイル\MyClass\BaseClass">
       <UniqueIdentifier>{da32d762-38a2-448e-bc4b-97aaa31398ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\MyClass\DebugManager">
+      <UniqueIdentifier>{49dbac20-eb77-4f10-8106-81107e2e8e97}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameMain.cpp">
@@ -291,6 +294,9 @@
     </ClCompile>
     <ClCompile Include="MyClass\BaseClass\ImageBase.cpp">
       <Filter>ソース ファイル\MyClass\BaseClass</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\DebugManager\DebugManager.cpp">
+      <Filter>ソース ファイル\MyClass\DebugManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -468,6 +474,9 @@
     </ClInclude>
     <ClInclude Include="MyClass\BaseClass\ImageBase.h">
       <Filter>ソース ファイル\MyClass\BaseClass</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\DebugManager\DebugManager.h">
+      <Filter>ソース ファイル\MyClass\DebugManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

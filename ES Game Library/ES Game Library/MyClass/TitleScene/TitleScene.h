@@ -21,6 +21,7 @@ public:
 	TitleScene() { SoundManager::Instance().BGMPlay(BGM_Num::Title); };
 	~TitleScene() {};
 
+	void FileInitialize();
 	void Initialize();
 	void Update();
 	void Draw2D();
@@ -29,10 +30,13 @@ public:
 	void MoveImage(Vector3& pos, Vector3& move_value);
 	void MoveEnemy();
 	void MoveCloud(int cloud_num);
-private:
-	
+	void PushStartButton();
 
-	std::vector<ImagePram> m_img_param;
+private:
+	std::vector<ImageParam> m_img_param;
+
+	float start_alpha_value;
+	bool start_flash_flag;
 
 	bool m_enemy_image_inversion_flag = true;
 	float m_boar_animation_time = 0.5f;

@@ -4,22 +4,21 @@
 #include "ImageBase.h"
 
 
-class CharaBase
+class CharaBase : public RectEX
 {
 public:
-	CharaBase() { rect_ex = img_param; };
+	CharaBase() {};
 	~CharaBase() { };
 
 	void Draw2D();
-	void Draw2D(ImagePram& image_param);
+	void Draw2D(ImageParam& image_param);
 
 protected:
-	void PlayAnimation(float& animation_time, ImagePram& animation_image_param);
+	void PlayAnimation(float& animation_time, ImageParam& animation_image_param);
 
-	ImagePram img_param;
+	ImageParam img_param;
 
 private:
-	RectEX rect_ex;
 	float m_count = 0;
 	const float m_one_second = 60;
 };
