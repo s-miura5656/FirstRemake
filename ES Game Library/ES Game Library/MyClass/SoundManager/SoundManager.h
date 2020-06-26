@@ -32,13 +32,13 @@ public:
 	void Initialize();
 	void BGMPlay(int bgm_number);
 	void SEPlay(int se_number);
-	SOUND GetSE(int se_number) { return se[se_number]; }
-	MUSIC GetBGM(int bgm_number) { return bgm[bgm_number]; }
+	SOUND GetSE(int se_number) { return m_se[se_number]; }
+	MUSIC GetBGM(int bgm_number) { return m_bgm[bgm_number]; }
 private:
 	SoundManager() {};
 	SoundManager(const SoundManager&) = delete;
 	void operator=(const SoundManager&) = delete;
 
-	std::vector<MUSIC> bgm;
-	std::vector<SOUND> se;
+	std::vector<MUSIC> m_bgm;
+	std::vector<SOUND> m_se;
 };

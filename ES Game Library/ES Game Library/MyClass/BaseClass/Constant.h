@@ -24,3 +24,6 @@
 
 // アルファ値無
 #define ALPHA_ZERO 0.f
+
+// 画像サイズ 1280 * 720
+#define IMAGE_SIZE_SCREEN Rect(0, 0, 1280, 720)

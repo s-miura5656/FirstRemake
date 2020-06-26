@@ -46,17 +46,17 @@ Rect RectEX::MoveRectY(ImageParam& param)
 void RectEX::FlashImage(ImageParam& param, float alpha_value)
 {
 	//! true = •s“§–¾‚É‚µ‚Ä‚¢‚­ false = “§–¾‚É‚µ‚Ä‚¢‚­
-	param.alpha = alpha_flag ? param.alpha + alpha_value : param.alpha - alpha_value;
+	param.alpha = m_alpha_flag ? param.alpha + alpha_value : param.alpha - alpha_value;
 
 	if (param.alpha >= ALPHA_MAX)
 	{
-		alpha_flag = false;
+		m_alpha_flag = false;
 		param.alpha = ALPHA_MAX;
 	}
 
 	if (param.alpha <= ALPHA_ZERO)
 	{
-		alpha_flag = true;
+		m_alpha_flag = true;
 		param.alpha = ALPHA_ZERO;
 	}
 }
