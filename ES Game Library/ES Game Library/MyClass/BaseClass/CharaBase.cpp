@@ -1,4 +1,7 @@
 #include "CharaBase.h"
+#include "../SoundManager/SoundManager.h"
+#include "../Controller/Controller.h"
+#include "../SceneManager/SceneManager.h"
 
 /* 連番のアニメーション
 * @param animation_time = 連番を変える間隔
@@ -14,6 +17,24 @@ void CharaBase::PlayAnimation(float& animation_time, ImageParam& animation_image
 	{
 		animation_image_param.rect = RectEX::MoveRectX(animation_image_param);
 		m_count = 0;
+	}
+}
+
+/*
+* 左クリックを押したらシーン遷移
+* @param scene_num = シーン番号
+* @param se_num = システム音番号
+*/
+void CharaBase::ChangeScene(int scene_num, int se_num)
+{
+	if (SoundManager::Instance().GetSE(se_num)->IsPlaying())
+		return;
+
+	//! マウスの左クリックを押したら次へ遷移
+	if (Controller::Instance().GetMouseBuffer().IsPressed(Mouse_Button1))
+	{
+		SoundManager::Instance().SEPlay(se_num);
+		SceneManager::Instance().SetSceneNumber(scene_num);
 	}
 }
 

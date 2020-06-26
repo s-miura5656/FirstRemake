@@ -168,6 +168,7 @@
     <ClCompile Include="MyClass\BaseClass\ImageBase.cpp" />
     <ClCompile Include="MyClass\Controller\Controller.cpp" />
     <ClCompile Include="MyClass\DebugManager\DebugManager.cpp" />
+    <ClCompile Include="MyClass\Explanation\ExplanationScene.cpp" />
     <ClCompile Include="MyClass\SceneManager\SceneManager.cpp" />
     <ClCompile Include="MyClass\SoundManager\SoundManager.cpp" />
     <ClCompile Include="MyClass\TitleScene\TitleScene.cpp" />
@@ -229,6 +230,7 @@
     <ClInclude Include="MyClass\BaseClass\ImageBase.h" />
     <ClInclude Include="MyClass\Controller\Controller.h" />
     <ClInclude Include="MyClass\DebugManager\DebugManager.h" />
+    <ClInclude Include="MyClass\Explanation\ExplanationScene.h" />
     <ClInclude Include="MyClass\SceneManager\SceneManager.h" />
     <ClInclude Include="MyClass\SoundManager\SoundManager.h" />
     <ClInclude Include="MyClass\TitleScene\TitleScene.h" />

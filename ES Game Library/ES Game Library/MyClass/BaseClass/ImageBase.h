@@ -55,6 +55,5 @@ public:
 	void FlashImage(ImageParam& param, float alpha_value);
 	float AlphaPerSecond(float time);
 private:
-	bool alpha_flag = false;
-	float alpha_value;
+	bool m_alpha_flag = false;
 };

@@ -133,6 +133,9 @@
     <Filter Include="ソース ファイル\MyClass\DebugManager">
       <UniqueIdentifier>{49dbac20-eb77-4f10-8106-81107e2e8e97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\MyClass\ExplanationScene">
+      <UniqueIdentifier>{80ebe67b-4305-44e0-8c35-4c240d1e6f57}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameMain.cpp">
@@ -297,6 +300,9 @@
     </ClCompile>
     <ClCompile Include="MyClass\DebugManager\DebugManager.cpp">
       <Filter>ソース ファイル\MyClass\DebugManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Explanation\ExplanationScene.cpp">
+      <Filter>ソース ファイル\MyClass\ExplanationScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -477,6 +483,9 @@
     </ClInclude>
     <ClInclude Include="MyClass\DebugManager\DebugManager.h">
       <Filter>ソース ファイル\MyClass\DebugManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Explanation\ExplanationScene.h">
+      <Filter>ソース ファイル\MyClass\ExplanationScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

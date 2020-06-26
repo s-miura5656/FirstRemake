@@ -2,40 +2,25 @@
 
 void SceneManager::FileInitialize()
 {
-	title_scene->FileInitialize();
+	m_title_scene->FileInitialize();
+	m_explanation_scene->FileInitialize();
 }
 
 void SceneManager::Initialize()
 {
-	switch (SceneNumber)
-	{
-	case SceneNum::Scene_Title:
-		title_scene->Initialize();
-		break;
-	case SceneNum::Scene_Explanation:
-
-		break;
-	case SceneNum::Scene_Rule:
-
-		break;
-	case SceneNum::Scene_Main:
-
-		break;
-	case SceneNum::Scene_Result:
-
-		break;
-	}
+	m_title_scene->Initialize();
+	m_explanation_scene->Initialize();
 }
 
 void SceneManager::Update()
 {
-	switch (SceneNumber)
+	switch (m_SceneNumber)
 	{
 	case SceneNum::Scene_Title:
-		title_scene->Update();
+		m_title_scene->Update();
 		break;
 	case SceneNum::Scene_Explanation:
-
+		m_explanation_scene->Update();
 		break;
 	case SceneNum::Scene_Rule:
 
@@ -45,13 +30,21 @@ void SceneManager::Update()
 		break;
 	case SceneNum::Scene_Result:
 
+		break;
+	case SceneNum::Scene_Retry:
+		SceneManager::Initialize();
+		SetSceneNumber(SceneNum::Scene_Main);
+		break;
+	case SceneNum::Scene_Return_Title:
+		SceneManager::Initialize();
+		SetSceneNumber(SceneNum::Scene_Title);
 		break;
 	}
 }
 
 void SceneManager::Draw3D()
 {
-	switch (SceneNumber)
+	switch (m_SceneNumber)
 	{
 	case SceneNum::Scene_Title:
 
@@ -73,14 +66,14 @@ void SceneManager::Draw3D()
 
 void SceneManager::Draw2D()
 {
-	switch (SceneNumber)
+	switch (m_SceneNumber)
 	{
 	case SceneNum::Scene_Title:
-		title_scene->Draw2D();
+		m_title_scene->Draw2D();
 
 		break;
 	case SceneNum::Scene_Explanation:
-
+		m_explanation_scene->Draw2D();
 		break;
 	case SceneNum::Scene_Rule:
 

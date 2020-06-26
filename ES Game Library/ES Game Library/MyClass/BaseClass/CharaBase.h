@@ -10,9 +10,10 @@ public:
 	CharaBase() {};
 	~CharaBase() { };
 
-	void Draw2D();
-	void Draw2D(ImageParam& image_param);
+	virtual void Draw2D();
+	virtual void Draw2D(ImageParam& image_param);
 
+	void ChangeScene(int scene_num, int se_num);
 protected:
 	void PlayAnimation(float& animation_time, ImageParam& animation_image_param);
 

@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../../ESGLib.h"
 #include "../SoundManager/SoundManager.h"
 #include "../BaseClass/Constant.h"
 #include "../BaseClass/CharaBase.h"
