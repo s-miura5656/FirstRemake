@@ -6,6 +6,8 @@
 enum SceneNum
 {
 	Scene_Title,
+	Scene_Explanation,
+	Scene_Rule,
 	Scene_Main,
 	Scene_Result,
 }; 
@@ -18,10 +20,13 @@ public:
 		title_scene.reset();
 	};
 
+	void FileInitialize();
 	void Initialize();
 	void Update();
 	void Draw3D();
 	void Draw2D();
+
+	void SetSceneNumber(int scene_number) { SceneNumber = scene_number; }
 
 	static SceneManager& Instance() {
 		static SceneManager instance;

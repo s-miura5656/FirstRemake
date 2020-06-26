@@ -32,7 +32,8 @@ public:
 	void Initialize();
 	void BGMPlay(int bgm_number);
 	void SEPlay(int se_number);
-
+	SOUND GetSE(int se_number) { return se[se_number]; }
+	MUSIC GetBGM(int bgm_number) { return bgm[bgm_number]; }
 private:
 	SoundManager() {};
 	SoundManager(const SoundManager&) = delete;
