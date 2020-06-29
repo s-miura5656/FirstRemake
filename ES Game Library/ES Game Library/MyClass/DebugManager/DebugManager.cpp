@@ -17,9 +17,9 @@ void DebugManager::DrawDebugText(int value_to_display, Vector2 pos, Color color)
 void DebugManager::DrawDebugText(Vector3& value_to_display, Vector2 pos, Color color)
 {
 #if _DEBUG
-	SpriteBatch.DrawString(DefaultFont, pos + Vector2(0, 0), color, _T("X %d"), value_to_display.x);
-	SpriteBatch.DrawString(DefaultFont, pos + Vector2(0, 20), color, _T("Y %d"), value_to_display.y);
-	SpriteBatch.DrawString(DefaultFont, pos + Vector2(0, 40), color, _T("Z %d"), value_to_display.z);
+	SpriteBatch.DrawString(DefaultFont, pos + Vector2(0, 0), color, _T("X %f"), value_to_display.x);
+	SpriteBatch.DrawString(DefaultFont, pos + Vector2(0, 20), color, _T("Y %f"), value_to_display.y);
+	SpriteBatch.DrawString(DefaultFont, pos + Vector2(0, 40), color, _T("Z %f"), value_to_display.z);
 #endif // _DEBUG
 }
 

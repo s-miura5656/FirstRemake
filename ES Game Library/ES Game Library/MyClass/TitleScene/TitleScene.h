@@ -6,11 +6,11 @@
 
 enum TitleImageNum
 {
-	Title_Logo,
-	Title_Cloud_One,
-	Title_Cloud_Two,
-	Title_Enemy,
-	Title_Start_Logo,
+	Logo,
+	Cloud_One,
+	Cloud_Two,
+	Enemy,
+	Start_Logo,
 	Title_NUM_MAX
 };
 

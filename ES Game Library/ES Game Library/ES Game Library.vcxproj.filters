@@ -115,26 +115,53 @@
     <Filter Include="ソース ファイル\MyClass">
       <UniqueIdentifier>{f0836e8d-b414-4513-86b8-48485b7627c7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MyClass\SceneManager">
-      <UniqueIdentifier>{16b9f0fa-244c-4925-81d7-5856a4e3ac28}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\MyClass\TitleScene">
-      <UniqueIdentifier>{b307908a-3b3d-429e-ad44-d82221b0a971}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\MyClass\Controller">
-      <UniqueIdentifier>{4152f1a4-eb6c-4d1f-b8bd-b541e10254fd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\MyClass\SoundManager">
-      <UniqueIdentifier>{7c938d58-7182-4cf3-ba0e-1f9b8f819157}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\MyClass\BaseClass">
       <UniqueIdentifier>{da32d762-38a2-448e-bc4b-97aaa31398ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MyClass\DebugManager">
+    <Filter Include="ソース ファイル\MyClass\Managers">
+      <UniqueIdentifier>{2bdb1a3d-8f5d-4d52-8a88-84dfd55b5b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Managers\SceneManager">
+      <UniqueIdentifier>{16b9f0fa-244c-4925-81d7-5856a4e3ac28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Managers\SoundManager">
+      <UniqueIdentifier>{7c938d58-7182-4cf3-ba0e-1f9b8f819157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Managers\DebugManager">
       <UniqueIdentifier>{49dbac20-eb77-4f10-8106-81107e2e8e97}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MyClass\ExplanationScene">
+    <Filter Include="ソース ファイル\MyClass\Scenes">
+      <UniqueIdentifier>{deb006c0-2722-42b6-8705-c51b6769bdd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Scenes\RuleScene">
+      <UniqueIdentifier>{0d932ceb-d7a7-47ad-a16a-bf41360653a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Scenes\TitleScene">
+      <UniqueIdentifier>{b307908a-3b3d-429e-ad44-d82221b0a971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Scenes\MainScene">
+      <UniqueIdentifier>{1bdc0de4-1d38-426c-b9f4-3334e59b521a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Scenes\ExplanationScene">
       <UniqueIdentifier>{80ebe67b-4305-44e0-8c35-4c240d1e6f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Managers\ControllerManager">
+      <UniqueIdentifier>{4152f1a4-eb6c-4d1f-b8bd-b541e10254fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Chara">
+      <UniqueIdentifier>{77b24774-7e75-4c6a-9079-f918d8387f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Chara\Player">
+      <UniqueIdentifier>{9d1dbb36-83fd-4bcc-b007-facc334fc15a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Managers\EnemyManager">
+      <UniqueIdentifier>{31c6102a-8a31-4ca6-8b12-45d24de0556b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Chara\EnemyFactory">
+      <UniqueIdentifier>{e793e17a-825e-4073-a976-ae0369e3f523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyClass\Chara\EnemyFactory\EnemyType">
+      <UniqueIdentifier>{5f82b7ab-95bb-47b1-9432-10fa9e05dde0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -281,16 +308,16 @@
       <Filter>ソース ファイル\拡張\Direct2D</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\SceneManager\SceneManager.cpp">
-      <Filter>ソース ファイル\MyClass\SceneManager</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\SceneManager</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\TitleScene\TitleScene.cpp">
-      <Filter>ソース ファイル\MyClass\TitleScene</Filter>
+      <Filter>ソース ファイル\MyClass\Scenes\TitleScene</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\Controller\Controller.cpp">
-      <Filter>ソース ファイル\MyClass\Controller</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\ControllerManager</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\SoundManager\SoundManager.cpp">
-      <Filter>ソース ファイル\MyClass\SoundManager</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\SoundManager</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\BaseClass\CharaBase.cpp">
       <Filter>ソース ファイル\MyClass\BaseClass</Filter>
@@ -299,10 +326,31 @@
       <Filter>ソース ファイル\MyClass\BaseClass</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\DebugManager\DebugManager.cpp">
-      <Filter>ソース ファイル\MyClass\DebugManager</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\DebugManager</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\Explanation\ExplanationScene.cpp">
-      <Filter>ソース ファイル\MyClass\ExplanationScene</Filter>
+      <Filter>ソース ファイル\MyClass\Scenes\ExplanationScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\RuleScene\RuleScene.cpp">
+      <Filter>ソース ファイル\MyClass\Scenes\RuleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\MainScene\MainScene.cpp">
+      <Filter>ソース ファイル\MyClass\Scenes\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\BaseClass\Collision.cpp">
+      <Filter>ソース ファイル\MyClass\BaseClass</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Player\Player.cpp">
+      <Filter>ソース ファイル\MyClass\Chara\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\EnemyManager\EnemyManager.cpp">
+      <Filter>ソース ファイル\MyClass\Managers\EnemyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\EnemyFactory\EnemyFactory.cpp">
+      <Filter>ソース ファイル\MyClass\Chara\EnemyFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\EnemyFactory\EnemyType\EnemyBase.cpp">
+      <Filter>ソース ファイル\MyClass\Chara\EnemyFactory\EnemyType</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -461,16 +509,16 @@
       <Filter>ヘッダー ファイル\拡張\Direct2D</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\SceneManager\SceneManager.h">
-      <Filter>ソース ファイル\MyClass\SceneManager</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\SceneManager</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\TitleScene\TitleScene.h">
-      <Filter>ソース ファイル\MyClass\TitleScene</Filter>
+      <Filter>ソース ファイル\MyClass\Scenes\TitleScene</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\Controller\Controller.h">
-      <Filter>ソース ファイル\MyClass\Controller</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\ControllerManager</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\SoundManager\SoundManager.h">
-      <Filter>ソース ファイル\MyClass\SoundManager</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\SoundManager</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\BaseClass\CharaBase.h">
       <Filter>ソース ファイル\MyClass\BaseClass</Filter>
@@ -482,10 +530,31 @@
       <Filter>ソース ファイル\MyClass\BaseClass</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\DebugManager\DebugManager.h">
-      <Filter>ソース ファイル\MyClass\DebugManager</Filter>
+      <Filter>ソース ファイル\MyClass\Managers\DebugManager</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\Explanation\ExplanationScene.h">
-      <Filter>ソース ファイル\MyClass\ExplanationScene</Filter>
+      <Filter>ソース ファイル\MyClass\Scenes\ExplanationScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\RuleScene\RuleScene.h">
+      <Filter>ソース ファイル\MyClass\Scenes\RuleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\MainScene\MainScene.h">
+      <Filter>ソース ファイル\MyClass\Scenes\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\BaseClass\Collision.h">
+      <Filter>ソース ファイル\MyClass\BaseClass</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Player\Player.h">
+      <Filter>ソース ファイル\MyClass\Chara\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\EnemyManager\EnemyManager.h">
+      <Filter>ソース ファイル\MyClass\Managers\EnemyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\EnemyFactory\EnemyFactory.h">
+      <Filter>ソース ファイル\MyClass\Chara\EnemyFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\EnemyFactory\EnemyType\EnemyBase.h">
+      <Filter>ソース ファイル\MyClass\Chara\EnemyFactory\EnemyType</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

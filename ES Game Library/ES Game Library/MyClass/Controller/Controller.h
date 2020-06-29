@@ -9,13 +9,9 @@ public:
 
 	void Initialize();
 
-	// キーボード押している間
 	KeyboardState GetKeyState();
-	// キーボード一回だけ
 	KeyboardBuffer GetKeyBuffer();
-	// マウス一回だけ
 	MouseBuffer GetMouseBuffer();
-	// マウス押している間
 	MouseState GetMouseState();
 
 	static Controller& Instance() {

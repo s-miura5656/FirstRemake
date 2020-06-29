@@ -4,12 +4,16 @@ void SceneManager::FileInitialize()
 {
 	m_title_scene->FileInitialize();
 	m_explanation_scene->FileInitialize();
+	m_rule_scene->FileInitialize();
+	m_main_scene->FileInitialize();
 }
 
 void SceneManager::Initialize()
 {
 	m_title_scene->Initialize();
 	m_explanation_scene->Initialize();
+	m_rule_scene->Initialize();
+	m_main_scene->Initialize();
 }
 
 void SceneManager::Update()
@@ -23,10 +27,10 @@ void SceneManager::Update()
 		m_explanation_scene->Update();
 		break;
 	case SceneNum::Scene_Rule:
-
+		m_rule_scene->Update();
 		break;
 	case SceneNum::Scene_Main:
-
+		m_main_scene->Update();
 		break;
 	case SceneNum::Scene_Result:
 
@@ -70,16 +74,15 @@ void SceneManager::Draw2D()
 	{
 	case SceneNum::Scene_Title:
 		m_title_scene->Draw2D();
-
 		break;
 	case SceneNum::Scene_Explanation:
 		m_explanation_scene->Draw2D();
 		break;
 	case SceneNum::Scene_Rule:
-
+		m_rule_scene->Draw2D();
 		break;
 	case SceneNum::Scene_Main:
-
+		m_main_scene->Draw2D();
 		break;
 	case SceneNum::Scene_Result:
 

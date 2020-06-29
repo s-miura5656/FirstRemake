@@ -3,6 +3,8 @@
 #include "../../ESGLib.h"
 #include "../TitleScene/TitleScene.h"
 #include "../Explanation/ExplanationScene.h"
+#include "../RuleScene/RuleScene.h"
+#include "../MainScene/MainScene.h"
 
 enum SceneNum
 {
@@ -22,6 +24,8 @@ public:
 	{
 		m_title_scene.reset();
 		m_explanation_scene.reset();
+		m_rule_scene.reset();
+		m_main_scene.reset();
 	};
 
 	void FileInitialize();
@@ -43,12 +47,16 @@ private:
 		m_SceneNumber = SceneNum::Scene_Title;
 		m_title_scene.reset(new TitleScene);
 		m_explanation_scene.reset(new Explanation);
+		m_rule_scene.reset(new RuleScene);
+		m_main_scene.reset(new MainScene);
 	};
 	SceneManager(const SceneManager&) = delete;
 	void operator=(const SceneManager&) = delete;
 
-	std::shared_ptr<TitleScene> m_title_scene;
-	std::shared_ptr<Explanation> m_explanation_scene;
+	std::unique_ptr<TitleScene> m_title_scene;
+	std::unique_ptr<Explanation> m_explanation_scene;
+	std::unique_ptr<RuleScene> m_rule_scene;
+	std::unique_ptr<MainScene> m_main_scene;
 
 	int m_SceneNumber;
 };

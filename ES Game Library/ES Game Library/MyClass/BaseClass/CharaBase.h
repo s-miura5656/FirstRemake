@@ -8,8 +8,11 @@ class CharaBase : public RectEX
 {
 public:
 	CharaBase() {};
-	~CharaBase() { };
+	virtual ~CharaBase() {};
 
+	virtual void FileInitialize() = 0;
+	virtual void Initialize() = 0;
+	virtual void Update() {};
 	virtual void Draw2D();
 	virtual void Draw2D(ImageParam& image_param);
 
